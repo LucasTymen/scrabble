@@ -7,10 +7,11 @@ letter_to_points[" "] = 0
 
 def score_word(word):
   point_total = 0
-  for letters in word:
-    point_total += points
-    if(letters != word):
-      letter_to_points += 0
+  for letter in word:
+    point_total += letter_to_points.get(letter,0)
+  return point_total
 
+brownie_points = score_word("BROWNIE")
 
 print(letter_to_points)
+print("the word 'Brownie' counts " + str(brownie_points) + " points.")
