@@ -6,7 +6,7 @@ letter_to_points = {letters:points for letters, points in zip(letters, points)}
 letter_to_points[" "] = 0
 
 def score_word(word):
-  print("coucou")
+  point_total = 0
 
 
 print(letter_to_points)
