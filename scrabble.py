@@ -7,6 +7,10 @@ letter_to_points[" "] = 0
 
 def score_word(word):
   point_total = 0
+  for letters in word:
+    point_total += points
+    if(letters != word):
+      letter_to_points += 0
 
 
 print(letter_to_points)
