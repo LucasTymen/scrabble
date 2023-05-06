@@ -15,3 +15,5 @@ brownie_points = score_word("BROWNIE")
 
 print(letter_to_points)
 print("the word 'Brownie' counts " + str(brownie_points) + " points.")
+
+player_to_words = {"player1":["BLUE", "TENNIS", "EXIT"],"wordNerd":["EARTH", "EYES", "MACHINE" ], "Lexi Con":["ERASER", "BELLY", "HUSKY"], "Prof Reader":["ZAP", "COMA", "PERIOD"]}
