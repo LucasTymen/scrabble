@@ -19,3 +19,8 @@ print("the word 'Brownie' counts " + str(brownie_points) + " points.")
 player_to_words = {"player1":["BLUE", "TENNIS", "EXIT"],"wordNerd":["EARTH", "EYES", "MACHINE" ], "Lexi Con":["ERASER", "BELLY", "HUSKY"], "Prof Reader":["ZAP", "COMA", "PERIOD"]}
 
 player_to_points = {}
+
+for player, words in player_to_words.items():
+  player_points = 0
+  for word in words:
+    player_points += score_word(word)
